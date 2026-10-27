@@ -54,7 +54,7 @@ Makefile*
 .qmake.stash
 
 # =========================================================
-# CLion / IntelliJ / PyCharm (.idea)
+# CLion / IntelliJ / PyCharm
 # =========================================================
 .idea/
 *.iml
@@ -72,23 +72,13 @@ __pycache__/
 *.pyo
 *.pyd
 .python-version
-
-# Virtual environments
 venv/
 .venv/
 env/
 ENV/
-
-# Pytest
 .pytest_cache/
-
-# MyPy
 .mypy_cache/
-
-# Ruff
 .ruff_cache/
-
-# Coverage
 .coverage
 coverage.xml
 htmlcov/
@@ -148,3 +138,19 @@ vcpkg_installed/
 # =========================================================
 *.bak
 *.orig
+
+# Node.js
+node_modules/
+.npm/
+.nyc_output/
+*.tsbuildinfo
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Additional logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
